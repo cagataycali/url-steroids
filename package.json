@@ -1,6 +1,6 @@
 {
   "name": "url-steroids",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Usual url parse package but with steroids..",
   "main": "index.js",
   "scripts": {
