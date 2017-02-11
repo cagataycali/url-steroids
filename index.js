@@ -22,7 +22,7 @@ module.exports.parse = (url) => {
       .then((title) => {
         parsed = URL.parse(url);
         parsed.title = title;
-        resolve(title);
+        resolve(parsed);
       })
       .catch((err) => { reject(err); });
   });
