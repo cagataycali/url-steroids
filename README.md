@@ -9,6 +9,7 @@ yarn add url-steroids
 ```javascript
 const URL = require('url-steroids');
 
+// URL.parse
 URL.parse('http://google.com')
   .then((res) => {
     console.log(res);
@@ -30,6 +31,21 @@ URL.parse('http://google.com')
     href: 'http://google.com/',
     title: 'Google'
   }
+  */
+
+  // URL.match
+  URL.match('http://blog.mojilala.com/', 'https://mojilala.com')
+    .then(() => console.log("It's matching."))
+    .catch(() => console.log("It's not matching."));
+  /* Output
+    It's not matching.
+  */
+
+  URL.match('http://cagataycali.xyz/*', 'https://cagataycali.xyz/blog/')
+    .then(() => console.log("It's matching."))
+    .catch(() => console.log("It's not matching."));
+  /* Output
+    It's matching.
   */
 ```
 
